@@ -35,10 +35,7 @@ public class EnderecoController {
     
 
 
-    @GetMapping("/consultateste")
-    public ResponseEntity consultaCep(@RequestBody EnderecoRequest enderecoRequest) {
-        return ResponseEntity.ok(enderecoService.getAddress(enderecoRequest.getCep()));
-    }
+
 	
 	@GetMapping("/listaTodos") // Retorna uma lista de todos Endereços
 	public ResponseEntity<List<EnderecoModel>>getAll(){
